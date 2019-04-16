@@ -1,0 +1,57 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -30px;
+  max-width: 300px;
+  min-width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: gray;
+}
+
+#navbar-header {
+  color: grey;
+  font-size: 1.5em;
+  text-align: right;
+  margin: 10px;
+}
+
+#navbar ul {
+  height: 80%;
+}
+
+#navbar li {
+  border: 1px solid gray;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#navbar a {
+  text-decoration: none;
+}
+
+#main-doc {
+  position: absolute;
+  max-width: 900px;
+  margin-left: 310px;
+  margin-top: 5vh;
+}
+
+.main-section {
+  padding: 25px;
+}
+
+.main-section header {
+  font-weight: bold;
+}
