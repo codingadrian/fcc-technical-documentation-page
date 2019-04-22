@@ -3,10 +3,12 @@
   box-sizing: border-box;
 }
 
+/*Global styles*/
 body {
   color: black;
   background-color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 pre {
@@ -30,6 +32,55 @@ a {
   text-decoration: none;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    word-spacing: .05em;
+    line-height: 1.3em;
+    font-size: .80em;
+    }
+  
+  pre {
+    font-size: 1em;
+    padding-top: 18px;
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+
+  code {
+    position: relative;
+    left: -75px;
+  }
+  
+  section {
+    height: auto;
+  }
+
+  article {
+    text-align: justify;
+    width: 92vw;
+  }
+  
+  code {
+    margin-left: -60px;
+  }
+  
+  header {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  li {
+    margin: 15px 0;
+  } 
+}
+
+
 
 /*navbar*/
 nav {
@@ -41,6 +92,7 @@ nav {
   height: 100%;
   overflow: scroll;
 }
+
 
 #navbar-header {
   color: grey;
@@ -76,6 +128,27 @@ nav {
   color: gray;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    width: 100vw;
+    position: absolute;
+    left: 1px;
+    height: auto;
+  }
+  
+  #navbar-header {
+    color: grey;
+    font-size: 1.4em;
+  }
+  
+  #navbar li {
+    padding: 5px;
+    list-style-type: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
 
 /*End of navbar*/
 
@@ -100,4 +173,16 @@ article ul li {
   margin: 25px 0;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  #main-doc {
+    position: relative;
+    max-width: 95vw;
+    margin-left: 0;
+    top: 650px;
+  }
+
+  .main-section {
+    padding: 0;
+  }
+}
 /*End of main-doc and articles*/
